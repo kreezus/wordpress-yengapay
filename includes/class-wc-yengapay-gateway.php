@@ -180,7 +180,7 @@ class WC_YengaPay_Gateway extends WC_Payment_Gateway {
             // Construct API URL with organization_id and project_id
             $api_url = sprintf(
             // YengaPay API URL
-            'https://16ac-102-180-187-59.ngrok-free.app/api/v1/groups/%s/payment-intent/%s',
+            'YOUR_YENGAPAY_API_URL',
             $this->groupeId,
             $this->projectId
             );
