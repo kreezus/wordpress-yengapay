@@ -32,7 +32,6 @@ class WC_YengaPay_Gateway extends WC_Payment_Gateway {
         $this->webhook_secret = $this->get_option('webhook_secret');
 
         add_action('woocommerce_update_options_payment_gateways_' . $this->id, array($this, 'process_admin_options'));
-        add_action('woocommerce_thank_you_' . $this->id, array($this, 'thank_you_page'));
         add_action('woocommerce_api_' . $this->id, array($this, 'webhook_handler'));
     }
 
@@ -358,12 +357,6 @@ class WC_YengaPay_Gateway extends WC_Payment_Gateway {
         } catch (Exception $e) {
             error_log('YengaPay Webhook Error: ' . $e->getMessage());
             wp_send_json_error($e->getMessage(), 400);
-        }
-    }
-
-    public function thank_you_page() {
-        if ($this->instructions) {
-            echo wpautop($this->instructions);
         }
     }
 }
