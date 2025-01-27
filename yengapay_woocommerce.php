@@ -1,15 +1,16 @@
 <?php
 
+<?php
+
 /*
- * Plugin Name: YengaPay for Woocommerce
+ * Plugin Name: YengaPay for WooCommerce
  * Plugin URI: https://yengapay.com/
- * Author Name: Kreezus
- * Author URI: https://yengapay.com/
+ * Author: Kreezus
  * Description: This plugin allows for local mobile money payment systems.
- * Version: 0.0.1
- * License: 0.1.0
- * License URL: http://www.gnu.org/licenses/gpl-2.0.txt
- * text-domain: yengapay-woo
+ * Version: 1.0.0
+ * License: GPL v2 or later
+ * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
+ * Text Domain: yengapay-woo
  * 
  * Class WC_Gateway_YengaPat file.
  *

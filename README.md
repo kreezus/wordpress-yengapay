@@ -109,6 +109,10 @@ For support:
 - Contact YengaPay support team
 - Check WordPress plugin documentation
 
+## License
+
+This plugin is licensed under GPL v2 or later.
+
 ## Credits
 
 Developed by Kreezus for YengaPay
